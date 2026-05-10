@@ -7,38 +7,38 @@
   <link rel="stylesheet" href="assets/css/main.css" />
 
   <style>
+    body { text-align:center; }
+
     .project-card {
-      text-align:center;
-      padding:20px;
+      max-width:850px;
+      margin:70px auto;
     }
 
     .project-img {
       width:100%;
-      height:260px;
+      height:360px;
       object-fit:cover;
-      border-radius:12px;
-      box-shadow:0 6px 18px rgba(0,0,0,0.25);
+      border-radius:14px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.25);
       transition:0.3s;
     }
 
-    .project-img:hover {
-      transform:scale(1.03);
-    }
+    .project-img:hover { transform:scale(1.03); }
 
     .btn-primary {
       display:inline-block;
-      padding:12px 24px;
+      padding:12px 26px;
       background:#0d6efd;
       color:white !important;
       border-radius:8px;
       text-decoration:none;
       font-weight:bold;
-      margin-top:10px;
+      margin-top:14px;
     }
 
-    .btn-primary:hover {
-      background:#0b5ed7;
-    }
+    .btn-primary:hover { background:#0b5ed7; }
+
+    footer { margin-top:80px; padding:30px; }
   </style>
 </head>
 
@@ -47,7 +47,7 @@
 <header id="header">
   <div class="inner">
     <h1>
-      <strong>Hi, I'm Idan Artzi 👋</strong><br />
+      <strong>Hi, I'm Idan Artzi 👋</strong><br>
       Aspiring Data Analyst turning data into business insights
     </h1>
   </div>
@@ -61,7 +61,7 @@
   <h2>About Me</h2>
 </header>
 
-<p style="text-align:center;">
+<p>
 I'm passionate about turning raw data into clear, actionable insights.<br><br>
 Currently working in IT Support while transitioning into Data Analytics.<br>
 I build end-to-end projects using <b>Python, SQL, Excel and Power BI</b>.<br><br>
@@ -69,74 +69,66 @@ I build end-to-end projects using <b>Python, SQL, Excel and Power BI</b>.<br><br
 </p>
 </section>
 
-<!-- PROJECTS -->
-<section>
-<header class="major">
-  <h2>Projects</h2>
-</header>
-
-<div class="row">
-
 <!-- PROJECT 1 -->
-<article class="col-6 col-12-xsmall project-card">
-  <h3>Marketing Channels & Lead Conversion Analysis</h3>
+<section class="project-card">
 
-  <a href="https://github.com/IdanArtzi/Marketing_Analysis/blob/main/Visuals/Marketing_Analysis_DashBoard.pdf" target="_blank">
-    <img src="https://raw.githubusercontent.com/IdanArtzi//Marketing_Analysis/Visuals/PowerBI_Exec.png" class="project-img">
-  </a>
+<h2>Marketing Channels & Lead Conversion Analysis</h2>
 
-  <br>
-  <a href="https://github.com/IdanArtzi/Marketing_Analysis" target="_blank" class="btn-primary">
-    View GitHub Repo
-  </a>
+<a href="https://github.com/IdanArtzi/Marketing_Analysis/blob/main/Visuals/Marketing_Analysis_DashBoard.pdf" target="_blank">
+<img src="https://raw.githubusercontent.com/IdanArtzi/Marketing_Analysis/main/Visuals/PowerBI_Exec.png" class="project-img">
+</a>
 
-  <p>
-    End-to-end marketing analytics project exploring channel performance, conversion trends,
-    and business insights using Python and Power BI.
-  </p>
+<br>
+<a href="https://github.com/IdanArtzi/Marketing_Analysis" target="_blank" class="btn-primary">
+View GitHub Repo
+</a>
 
-  <p><b>Tools:</b> Python | Power BI</p>
-</article>
+<p>
+End-to-end marketing analytics project exploring channel performance,
+conversion trends and business insights using Python and Power BI.
+</p>
+
+<p><b>Tools:</b> Python | Power BI</p>
+
+</section>
 
 
 <!-- PROJECT 2 -->
-<article class="col-6 col-12-xsmall project-card">
-  <h3>Tech Trends Analysis</h3>
+<section class="project-card">
 
-  <a href="https://github.com/IdanArtzi/Tech_Trends_Analysis/blob/main/images/Tech_Trends_Dashboard.pdf" target="_blank">
-    <img src="https://raw.githubusercontent.com/IdanArtzi/Tech_Trends_Analysis/main/images/Dashboard_1_Current.png" class="project-img">
-  </a>
+<h2>Tech Trends Analysis</h2>
 
-  <br>
-  <a href="https://github.com/IdanArtzi/Tech_Trends_Analysis" target="_blank" class="btn-primary">
-    View GitHub Repo
-  </a>
+<a href="https://github.com/IdanArtzi/Tech_Trends_Analysis/blob/main/images/Tech_Trends_Dashboard.pdf" target="_blank">
+<img src="https://raw.githubusercontent.com/IdanArtzi/Tech_Trends_Analysis/main/images/Dashboard_1_Current.png" class="project-img">
+</a>
 
-  <p>
-    Analysis of global technology trends using Python and IBM Cognos Analytics.
-    Includes data cleaning, exploration and dashboard creation.
-  </p>
+<br>
+<a href="https://github.com/IdanArtzi/Tech_Trends_Analysis" target="_blank" class="btn-primary">
+View GitHub Repo
+</a>
 
-  <p><b>Tools:</b> Python | IBM Cognos</p>
-</article>
-
-</div>
-</section>
-
-<!-- CONTACT -->
-<section>
-<header class="major">
-  <h2>Get In Touch</h2>
-</header>
-
-<p style="text-align:center;">
-📧 iartzi.data@gmail.com<br>
-💼 LinkedIn<br>
-💻 GitHub
+<p>
+Analysis of global technology trends using Python and IBM Cognos Analytics.
+Includes data cleaning, exploration and dashboard creation.
 </p>
 
+<p><b>Tools:</b> Python | IBM Cognos</p>
+
 </section>
 
+
 </div>
+
+<!-- FOOTER -->
+<footer>
+  <h2>Links</h2>
+
+  <p>
+    <a href="https://github.com/IdanArtzi" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/in/idan-artzi-3b06592a0/" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/IdanArtzi/Resume/blob/main/Resume_.pdf" target="_blank">Resume</a>
+  </p>
+</footer>
+
 </body>
 </html>
