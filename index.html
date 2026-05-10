@@ -7,49 +7,92 @@
   <link rel="stylesheet" href="assets/css/main.css" />
 
   <style>
-    body { text-align:center; }
+    body {
+      text-align: center;
+    }
 
+    /* HEADER */
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      text-align: left;
+      padding: 40px 20px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #0d6efd;
+    }
+
+    /* PROJECTS */
     .project-card {
-      max-width:850px;
-      margin:70px auto;
+      max-width: 850px;
+      margin: 70px auto;
     }
 
     .project-img {
-      width:100%;
-      height:360px;
-      object-fit:cover;
-      border-radius:14px;
-      box-shadow:0 8px 25px rgba(0,0,0,0.25);
-      transition:0.3s;
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      transition: 0.3s;
     }
 
-    .project-img:hover { transform:scale(1.03); }
+    .project-img:hover {
+      transform: scale(1.03);
+    }
 
     .btn-primary {
-      display:inline-block;
-      padding:12px 26px;
-      background:#0d6efd;
-      color:white !important;
-      border-radius:8px;
-      text-decoration:none;
-      font-weight:bold;
-      margin-top:14px;
+      display: inline-block;
+      padding: 12px 26px;
+      background: #0d6efd;
+      color: white !important;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 14px;
     }
 
-    .btn-primary:hover { background:#0b5ed7; }
+    .btn-primary:hover {
+      background: #0b5ed7;
+    }
 
-    footer { margin-top:80px; padding:30px; }
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      background: #f7f9fc;
+      margin-top: 80px;
+      border-top: 1px solid #e6e6e6;
+    }
+
+    footer a {
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
   </style>
 </head>
 
 <body class="is-preload">
 
+<!-- HEADER -->
 <header id="header">
-  <div class="inner">
+  <div class="header-flex">
+
+    <img src="assets/images/IMG_1821.JPG" class="profile-img" alt="Idan Artzi">
+
     <h1>
       <strong>Hi, I'm Idan Artzi 👋</strong><br>
       Aspiring Data Analyst turning data into business insights
     </h1>
+
   </div>
 </header>
 
@@ -57,105 +100,64 @@
 
 <!-- ABOUT -->
 <section>
-<header class="major">
   <h2>About Me</h2>
-</header>
 
-<p>
-I'm passionate about turning raw data into clear, actionable insights.<br><br>
-Currently working in IT Support while transitioning into Data Analytics.<br>
-I build end-to-end projects using <b>Python, SQL, Excel and Power BI</b>.<br><br>
-<b>Actively seeking my first Data Analyst role.</b>
-</p>
+  <p>
+    I'm passionate about turning raw data into insights.<br><br>
+    Currently working in IT Support while transitioning into Data Analytics.<br>
+    I use Python, SQL, Excel and Power BI.<br><br>
+    <b>Actively seeking my first Data Analyst role.</b>
+  </p>
 </section>
 
-<!-- PROJECT 1 -->
+<!-- PROJECTS -->
 <section class="project-card">
 
-<h2>Marketing Channels & Lead Conversion Analysis</h2>
+  <h3>Marketing Analysis</h3>
 
-<a href="https://github.com/IdanArtzi/Marketing_Analysis/blob/main/Visuals/Marketing_Analysis_DashBoard.pdf" target="_blank">
-<img src="https://raw.githubusercontent.com/IdanArtzi/Marketing_Analysis/main/Visuals/PowerBI_Exec.png" class="project-img">
-</a>
+  <img src="https://raw.githubusercontent.com/IdanArtzi/Marketing_Analysis/main/Visuals/PowerBI_Exec.png"
+       class="project-img">
 
-<br>
-<a href="https://github.com/IdanArtzi/Marketing_Analysis" target="_blank" class="btn-primary">
-View GitHub Repo
-</a>
-
-<p>
-End-to-end marketing analytics project exploring channel performance,
-conversion trends and business insights using Python and Power BI.
-</p>
-
-<p><b>Tools:</b> Python | Power BI</p>
+  <br>
+  <a href="https://raw.githubusercontent.com/IdanArtzi/Marketing_Analysis/main/Visuals/Marketing_Analysis_DashBoard.pdf"
+     target="_blank"
+     class="btn-primary">
+     View Dashboard
+  </a>
 
 </section>
 
-
-<!-- PROJECT 2 -->
 <section class="project-card">
 
-<h2>Tech Trends Analysis</h2>
+  <h3>Tech Trends Analysis</h3>
 
-<a href="https://github.com/IdanArtzi/Tech_Trends_Analysis/blob/main/images/Tech_Trends_Dashboard.pdf" target="_blank">
-<img src="https://raw.githubusercontent.com/IdanArtzi/Tech_Trends_Analysis/main/images/Dashboard_1_Current.png" class="project-img">
-</a>
+  <img src="https://raw.githubusercontent.com/IdanArtzi/Tech_Trends_Analysis/main/images/Dashboard_1_Current.png"
+       class="project-img">
 
-<br>
-<a href="https://github.com/IdanArtzi/Tech_Trends_Analysis" target="_blank" class="btn-primary">
-View GitHub Repo
-</a>
-
-<p>
-Analysis of global technology trends using Python and IBM Cognos Analytics.
-Includes data cleaning, exploration and dashboard creation.
-</p>
-
-<p><b>Tools:</b> Python | IBM Cognos</p>
+  <br>
+  <a href="https://raw.githubusercontent.com/IdanArtzi/Tech_Trends_Analysis/main/images/Tech_Trends_Dashboard.pdf"
+     target="_blank"
+     class="btn-primary">
+     View Dashboard
+  </a>
 
 </section>
 
-<article class="col-6 col-12-xsmall project-card">
+<section class="project-card">
 
   <h3>World Happiness Analysis</h3>
 
-  <!-- Preview image linking to dashboard -->
-  <a href="https://raw.githubusercontent.com/IdanArtzi/World_Happiness_Project/main/dashboard/World_Happiness_Dashboard.html" target="_blank">
-
-    <img 
-      src="https://raw.githubusercontent.com/IdanArtzi/World_Happiness_Project/main/images/gen_ai_choropleth.png"
-      class="project-img"
-      alt="World Happiness Choropleth Dashboard">
-
-  </a>
+  <img src="https://raw.githubusercontent.com/IdanArtzi/World_Happiness_Project/main/images/gen_ai_choropleth.png"
+       class="project-img">
 
   <br>
-
-  <!-- Interactive dashboard button -->
   <a href="https://raw.githubusercontent.com/IdanArtzi/World_Happiness_Project/main/dashboard/World_Happiness_Dashboard.html"
      target="_blank"
      class="btn-primary">
-     🌍 Open Interactive Dashboard
+     Open Interactive Dashboard
   </a>
 
-  <p>
-    Global analysis of happiness scores using Python and Plotly.
-    Explores GDP, social support, and regional differences using interactive visualizations.
-  </p>
-
-  <p><strong>Tools:</strong> Python | Plotly</p>
-
-  <br>
-
-  <!-- GitHub repo -->
-  <a href="https://github.com/IdanArtzi/World_Happiness_Project"
-     target="_blank"
-     class="btn-primary">
-     View GitHub Repo
-  </a>
-
-</article>
+</section>
 
 </div>
 
